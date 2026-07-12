@@ -11,8 +11,8 @@
 .svn/
 .swiftpm/
 migrate_working_dir/
-# App secrets
-lib/translation_services.dart
+# App secret
+lib/translation_service.dart
 
 # IntelliJ related
 *.iml
