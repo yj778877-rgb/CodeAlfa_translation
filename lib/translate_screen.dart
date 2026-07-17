@@ -5,10 +5,11 @@ import 'translation_provider.dart';
 class TranslateScreen extends StatelessWidget {
   const TranslateScreen({super.key});
 
-  static const wine = Color(0xFF722F37);
-  static const darkWine = Color(0xFF4A1E24);
-  static const dutchWhite = Color(0xFFEFDFBB);
-  static const softCream = Color(0xFFF7ECDA);
+  // ---- New Palette: Vanilla & Rose Taupe ----
+  static const wine = Color(0xFF8A6674);       // Rose Taupe
+  static const darkWine = Color(0xFF5C4349);   // Darker Rose Taupe (derived)
+  static const dutchWhite = Color(0xFFF7E6A9); // Vanilla
+  static const softCream = Color(0xFFFBF3D4);  // Lighter tint of Vanilla
 
   @override
   Widget build(BuildContext context) {
@@ -386,7 +387,7 @@ class TranslateScreen extends StatelessWidget {
                 hintStyle: TextStyle(
                   fontFamily: 'Orvelia',
                   fontSize: 15,
-                  color: Color(0xFFB59A8A),
+                  color: Color(0xFFB09A87),
                 ),
                 border: InputBorder.none,
                 counterText: '',
@@ -427,7 +428,7 @@ class TranslateScreen extends StatelessWidget {
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(16),
           gradient: const LinearGradient(
-            colors: [Color(0xFF5A232A), wine],
+            colors: [Color(0xFF5C4349), wine],
             begin: Alignment.centerLeft,
             end: Alignment.centerRight,
           ),
@@ -494,7 +495,7 @@ class TranslateScreen extends StatelessWidget {
                   fontFamily: 'Orvelia',
                   fontSize: 15,
                   color: provider.translatedText.isEmpty
-                      ? const Color(0xFFB59A8A)
+                      ? const Color(0xFFB09A87)
                       : darkWine,
                 ),
               ),
